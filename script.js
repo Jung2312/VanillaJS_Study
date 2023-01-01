@@ -64,19 +64,19 @@ player3.sayHello("jung");
 // 계산기
 const calculator = {
     add: function(a, b) {
-        console.log(a + b);
+        return a + b;
     },
     minus: function(a, b) {
-        console.log(a - b);
+        return a - b;
     },
     divide: function(a, b) {
-        console.log(a / b);
+        return a / b;
     },
     multiply: function(a, b) {
-        console.log(a * b);
+        return a * b;
     },
     power: function(a, b) {
-        console.log(a ** b);
+        return a ** b;
     },
 };
 
@@ -85,3 +85,16 @@ console.log(calculator.minus(1, 2));
 console.log(calculator.divide(1, 2));
 console.log(calculator.multiply(1, 2));
 console.log(calculator.power(1, 2));
+
+// 한국 나이 계산
+const age = 96;
+
+function calculateKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
+}
+
+
+// 조건문
+const number = parseInt(prompt("숫자를 입력하세요")); // 입력
+
+console.log(typeof parseInt(number));
