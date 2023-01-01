@@ -7,10 +7,13 @@
 + let
 
 ### 상수
-+ const
++ const 
 ___
 
 null : 아무것도 없음, 자연발생 불가, 값은 있으나 아무것도 존재안함
 
 undefined : 정의되지 않음, 메모리 공간은 있으나 값이 없음
+___
+
+NaN : not a number
 ___
