@@ -17,3 +17,5 @@ ___
 
 NaN : not a number
 ___
+
+prompt : 입력
