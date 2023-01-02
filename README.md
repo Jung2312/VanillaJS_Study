@@ -16,6 +16,8 @@ undefined : 정의되지 않음, 메모리 공간은 있으나 값이 없음
 ___
 
 NaN : not a number
+
+isNaN : NaN 판별 함수
 ___
 
 prompt : 입력

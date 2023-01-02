@@ -98,3 +98,8 @@ function calculateKrAge(ageOfForeigner) {
 const number = parseInt(prompt("숫자를 입력하세요")); // 입력
 
 console.log(typeof parseInt(number));
+
+// NaN 판별
+if (isNaN(number)) {
+    console.log("숫자가 아닙니다.");
+}
