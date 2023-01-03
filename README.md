@@ -21,3 +21,6 @@ isNaN : NaN 판별 함수
 ___
 
 prompt : 입력
+___
+
+document : HTML의 값에 접근
