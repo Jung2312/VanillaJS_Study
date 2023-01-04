@@ -132,3 +132,46 @@ ele = document.querySelector("#TITLE");
 console.log(ele);
 
 
+// 이벤트
+
+ele.innerText = "Click";
+
+function handleTitleClick() {
+    ele.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    ele.style.color = "red";
+}
+
+// 오류 -> ele.addEventListener("click", handleTitleClick());
+ele.addEventListener("click", handleTitleClick);
+ele.addEventListener("mouseenter", handleMouseEnter);
+
+
+// 창 사이즈 변경 이벤트
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+window.addEventListener("resize", handleWindowResize);
+
+
+// 창 복사 이벤트(ctrl + c)
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+window.addEventListener("copy", handleWindowCopy);
+
+// 인터넷 연결 확인 이벤트
+function handleOffline() {
+    alert("SOS no WIFI");
+}
+
+function handleOnline() {
+    alert("ALL GOOD");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
