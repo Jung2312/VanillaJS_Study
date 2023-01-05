@@ -116,15 +116,15 @@ title.innerText = "title";
 
 // hi란 classname을 가진 태그의 내용을 class로 변경
 const Classn = document.getElementsByClassName("hi");
-const Classn2 = document.getElementsByClassName("hello");
+//const Classn2 = document.getElementsByClassName("hello");
 
 // 해당 클래스 네임을 가진 첫번째 객체만 가져옴
-let ele = document.querySelector(".hello h1");
-ele = document.querySelector(".hello h1:first-child");
+let ele = document.querySelector("#hello h1");
+ele = document.querySelector("#hello h1:first-child");
 console.log(ele.innerText);
 
 // 해당 클래스 네임을 가진 모든 객체 가져옴
-ele = document.querySelectorAll(".hello h1");
+ele = document.querySelectorAll("#hello h1");
 console.log(ele);
 
 // 해당 id를 가진 객체 가져옴
@@ -175,3 +175,53 @@ function handleOnline() {
 
 window.addEventListener("offline", handleOffline);
 window.addEventListener("online", handleOnline);
+
+
+const he = document.querySelector("#hello");
+
+function handleTitleClick()
+{
+    const currentColor = he.style.color;
+    let newColor;
+
+    if(currentColor == "blue")
+    {
+        newColor = "red";
+    }
+    else
+    {
+        newColor = "blue";
+    }
+    he.style.color = newColor;
+}
+
+he.addEventListener("click", handleTitleClick);
+
+
+
+// 클래스 추가(기존의 클래스 이름을 유지한 채로 추가)
+function handleTitleClick()
+{
+    const clickClass = "active";
+    let currentName = he.classList; // 클래스를 리스트 형식으로 가져옴(클래스 소실이 없음)
+    let newName;
+
+    if(currentName.contains(clickClass)) // 클래스가 존재하는지 확인
+    {
+        currentName.remove(clickClass); // 클래스 제거
+    }
+    else
+    {
+        currentName.add(clickClass); // 클래스 추가
+    }
+}
+
+// 토글 함술을 사용하면 클래스가 존재하면 제거, 존재하지 않으면 추가(위 함수 축약)
+function handleTitleClick()
+{
+    const clickClass = "active";
+    he.classList.toggle(clickClass); // 클래스가 존재하면 제거, 존재하지 않으면 추가
+}
+
+he.addEventListener("click", handleTitleClick);
+

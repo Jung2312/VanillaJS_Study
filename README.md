@@ -24,3 +24,6 @@ prompt : 입력
 ___
 
 document : HTML의 값에 접근
+___
+
+h1.classList.toggle(clickClass) : 클래스 목록에 해당 클래스가 있으면 제거, 없으면 추가
