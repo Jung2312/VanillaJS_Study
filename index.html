@@ -7,21 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- css 불러옴 -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainstyle.css">
     <title>Document</title>
    </head>
 <body>
-    <H1 autofocus class="hi" id="TITLE">Hello World</H1>
-    <H1 autofocus class="hi">Hello World</H1>
-    <H1 autofocus class="hi">Hello World</H1>
-    <H1 autofocus class="hi">Hello World</H1>
-    <H1 autofocus class="hi">Hello World</H1>
+    <div class="login_form">
+        <h1>LOGIN</h1>
+        
 
-    <div class="font_style" id="hello">
-        <h1>hello</h1>
-    </div>
+        <input type="text" placeholder="이름을 입력하세요."/>
+        <button>LOGIN</button>
+    </div>   
+
+    <!-- 무조건 폼으로 감싸야함 -->
+    <form id="form">
+        <!-- required : 필수 입력, maxlength : 최대 글자 수 
+            type="sudmit" : 제출 -->
+        <input 
+            required 
+            maxlength="15" 
+            type="sudmit"  
+            placeholder="이름을 입력하세요."
+        />
+    </form>
+
+    <a href="http://nomadcoders.co">Go to courses</a>
 
     <!-- 자바 스크립트 불러옴(주로 끝에서 부름) -->
-    <script src="script.js"></script>
+    <script src="mainjs.js"></script>
 </body>
 </html>

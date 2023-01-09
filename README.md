@@ -27,3 +27,9 @@ document : HTML의 값에 접근
 ___
 
 h1.classList.toggle(clickClass) : 클래스 목록에 해당 클래스가 있으면 제거, 없으면 추가
+___
+
+### HTML input 기능
+required : 필수 입력
+
+maxlength : 최대 글자 수
