@@ -11,16 +11,13 @@
     <title>Document</title>
    </head>
 <body>
-    <div class="login_form">
-        <h1>LOGIN</h1>
-        
-
+    <div id="login_form" class="hidden">
         <input type="text" placeholder="이름을 입력하세요."/>
         <button>LOGIN</button>
     </div>   
 
     <!-- 무조건 폼으로 감싸야함 -->
-    <form id="form">
+    <form id="form" class="hidden">
         <!-- required : 필수 입력, maxlength : 최대 글자 수 
             type="sudmit" : 제출 -->
         <input 
@@ -29,10 +26,12 @@
             type="sudmit"  
             placeholder="이름을 입력하세요."
         />
+        <a href="http://nomadcoders.co">Go to courses</a>
+
     </form>
 
-    <a href="http://nomadcoders.co">Go to courses</a>
-
+    <h1 id="greeting" class="hidden"></h1>
+    
     <!-- 자바 스크립트 불러옴(주로 끝에서 부름) -->
     <script src="mainjs.js"></script>
 </body>
