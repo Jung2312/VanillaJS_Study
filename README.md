@@ -36,3 +36,14 @@ maxlength : 최대 글자 수
 ___
 
 ``(백틱) : 문자열 표기법
+___
+
+API_KEY를 숨기기 위해 import 하였으나 오류 발생
++ Cannot use import statement outside a module Error
+  + import 모듈을 사용할 파일을 지정해야 함
+  + <script type="module" defer src="파일경로"></script>
+___
+
+### .gitignore
++ 유출 위험이 있는 데이터를 숨김
++ .gitignore에 파일명 작성
